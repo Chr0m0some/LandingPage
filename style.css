@@ -1,9 +1,27 @@
+/* HTML & Body */
+/* Some explanation:
+    By changing box-sizing to border-box we can use the more
+    intuitive version of sizing where 
+    content height/width + padding + border = actual width/height
+    The universal selector makes it so that everything inherits
+    from box-sizing, even pseudo-elements (Idk what these are yet),
+    but this allows developers to use content-box or padding-box*/
+
+html { 
+    box-sizing: border-box;
+}
+
+*, *::before,  *::after {
+    box-sizing: inherit;
+}
+
 html, body {
     height: 100%;
 }
 
 body {
     font-family: Roboto, sans-serif;
+    margin: 0;
 }
 
 /* Type Selector Changes */
@@ -14,20 +32,48 @@ ul {
     padding: 0;
 }
 
+a:link {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+img {
+    width: 400px;
+}
+
 /* Header */
 .header-container {
     background-color: #ACC7CE;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.header, .hero {
+    width: 1000px;
 }
 
 .header {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
     padding: 16px;
+}
+
+.right-links {
+    display: flex;
+    gap: 12px;
 }
 
 .hero {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
 
+.logo {
+    font-size: 32px;
+    color: white;
 }
