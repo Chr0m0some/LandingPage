@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Type Selector Changes */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-container {
+    background-color: #ACC7CE;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.hero {
+    display: flex;
+
+}
