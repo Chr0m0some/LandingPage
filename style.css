@@ -159,10 +159,29 @@ button {
 
 .section-two {
     background-color: #0F7BA6;
-    height: 200px;
+    height: 300px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.quote-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.quote-wrapper h3 {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.quote-wrapper h4 {
+    margin: 0;
+    margin-left: auto;
+    font-size: 24px;
+    font-weight: bold;
 }
 
