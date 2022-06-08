@@ -40,14 +40,25 @@ a:link {
 
 img {
     width: 400px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: aquamarine;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
 }
 
 /* Header */
 .header-container {
-    background-color: #ACC7CE;
+    background-color: #0F7BA6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
 }
 
 .header, .hero {
@@ -58,22 +69,95 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 0;
+    margin-bottom: 40px;
 }
 
 .right-links {
     display: flex;
+    flex: 1;
+    justify-content: space-between;
     gap: 12px;
+    max-width: 300px;
 }
 
+/* To line up the img and the text I bumped the two sections
+    to the top of the container using align-items: flex-start */
 .hero {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    height: 300px;
     gap: 30px;
+}
+
+.hero-left h1 {
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: 48px;
 }
 
 .logo {
     font-size: 32px;
     color: white;
+}
+
+/* section-one */
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 400px;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.section-one h2 {
+    font-size: 36px;
+    color: #119FBF;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 900px;
+}
+
+.box {
+    border-radius: 8px;
+    width: 170px;
+    height: 170px;
+}
+
+.box#box1 {
+    background-color: #731D24;
+}
+
+.box#box2 {
+    background-color: #0F7BA6;
+}
+
+.box#box3 {
+    background-color: #D99A4E;
+}
+
+.box#box4 {
+    background-color: #119FBF;
+}
+
+.text {
+    text-align: center;
+    margin-top: 16px;
+    color: #616161;
+}
+
+/* section-two */ 
+
+.section-two {
+    background-color: #0F7BA6;
+    height: 500px;
 }
